@@ -17,7 +17,7 @@ pipeline {
 
                     nexusArtifactUploader artifacts: 
 [[artifactId: 'simple-app', classifier: '', file: 'target/simple-app-3.0.0-SNAPSHOT.war', type: 'war']],
- credentialsId: '2nexus', groupId: 'in.javahome', nexusUrl: '34.102.33.22:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'docker-private-repo', version: '3.0.0-SNAPSHOT'
+ credentialsId: '2nexus', groupId: 'in.javahome', nexusUrl: '34.102.33.22:8083', nexusVersion: 'nexus3', protocol: 'http', repository: 'docker-private-repo', version: '3.0.0-SNAPSHOT'
             }
         }
     }
