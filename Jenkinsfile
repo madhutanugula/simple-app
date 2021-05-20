@@ -15,7 +15,7 @@ pipeline {
             steps{
                 script{
 
-                    nnexusArtifactUploader artifacts: [[artifactId: 'simple-app', classifier: '', file: 'target/simple-app-3.0.0-SNAPSHOT.war', type: 'war']], 
+                    nexusArtifactUploader artifacts: [[artifactId: 'simple-app', classifier: '', file: 'target/simple-app-3.0.0-SNAPSHOT.war', type: 'war']], 
                     credentialsId: 'nexus-1', groupId: 'in.javahome', nexusUrl: '34.102.33.22:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'telstra', version: '3.0.0-SNAPSHOT'
             }
         }
