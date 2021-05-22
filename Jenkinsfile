@@ -16,12 +16,17 @@ pipeline {
                 script{
 
                     
-                    {   nexusArtifactUploader artifacts: [[artifactId: 'simple-app', classifier: '', file: 'target/simple-app-3.0.0.war', type: 'war']], 
+                      nexusArtifactUploader artifacts: [[artifactId: 'simple-app', classifier: '', file: 'target/simple-app-3.0.0.war', type: 'war']], 
                       credentialsId: '2nexus', groupId: 'in.javahome', nexusUrl: '34.102.33.22:8081', nexusVersion: 'nexus3', protocol: 'http', 
-                        repository: 'telstra', version: '3.0.0'}
-                    { 
-                    moveComponents destination: 'telstra', nexusInstanceId: '2091', tagName: 'telstra1.0'
-            }
+                        repository: 'telstra', version: '3.0.0'
+                         
+                         
+                    
+                    
+                   
+                    
+            
+                    
             }
         }
     }
