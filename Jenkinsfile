@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Code checkout') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/MadhuTanugula14/dockerfiles.git'                   }
+                git credentialsId: 'scm', url: 'https://github.com/MadhuTanugula14/simple-app.git'                   }
         }
     
     // Building Docker images
